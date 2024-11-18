@@ -1,0 +1,46 @@
+.carousel-container{
+  width: 90%;
+  height: 105vh;
+  margin: 0% auto;
+  padding: 2%;
+  .img-box{
+    height: 100%;
+    margin: 0% auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .slides{
+    z-index: 2;
+    width: 80%;
+    margin: 0% auto;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    .back{
+      position: absolute;
+      left: -3%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .next{
+      position: absolute;
+      right: -3%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .row{
+      background-color: aquamarine;
+    }
+    .slide-show{
+      display: grid;
+      grid-template-rows: auto;
+    }
+    .slide{
+      padding: 10%;
+      margin: 1%;
+      background-color: black;
+    }
+  }
+}

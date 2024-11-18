@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Y';
+  slidingindex:number=0;
+  slide:string[]=[
+    "./Producers.png",
+    "./Proposals.png",
+    "./Services.png",
+    "./Assessment.png"
+  ]
 }
