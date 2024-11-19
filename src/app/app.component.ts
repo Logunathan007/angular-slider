@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   selectedIndex: number = 0;
-  loading: boolean = true;
-
+  imageLoaded = true;
   slides = [
     {
       contentHead: "Find a Verified Pro",
@@ -52,23 +51,6 @@ export class AppComponent {
       },
     },
   ]
-
-  setAnimation() {
-    this.loading = true;
-
-  }
-  // navigateBack() {
-
-  //   this.selectedIndex = this.selectedIndex !== 0 ? this.selectedIndex - 1 : 3;
-  //   // this.setAnimation();
-  // }
-  // navigateNext() {
-  //   this.selectedIndex = (this.selectedIndex + 1) % 4;
-  //   this.setAnimation()
-  // }
-
-
-  imageLoaded = true;
 
   setImageLoaded(): void {
     setTimeout(() => {

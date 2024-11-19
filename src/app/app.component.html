@@ -1,41 +1,3 @@
-<!-- <div class="carousel-container">
-  <div class="img-box">
-    <img [src]="slides[selectedIndex].content.image" class="bg-img onloading" [ngClass]="{'onloading':!loading,'loaded':loading}" alt="" />
-    <div class="content" [ngClass]="{'text-white':!slides[selectedIndex].color}" >
-      <div class="content-title">{{slides[selectedIndex].content.contentTitle}}</div>
-      <div class="content-sub">
-        {{slides[selectedIndex].content.contentSub}}
-      </div>
-    </div>
-    <div class="slides-cover">
-      <div class="slides">
-        <div class="back" (click)="navigateBack()">
-          <img src="../assets/icons/rounded-left.svg" alt="" />
-        </div>
-        <div class="next" (click)="navigateNext()">
-          <img src="../assets/icons/rounded-right.svg" alt="" />
-        </div>
-        <div class="slide-show">
-          <div
-            class="slide d-flex flex-column justify-content-between"
-            [ngClass]="{ active: i == selectedIndex }"
-            *ngFor="let slide of slides; let i = index"
-            (click)="selectedIndex = i"
-          >
-            <div>
-              <div class="slide-head">{{ slide.contentHead }}</div>
-              <div class="slide-sub">{{ slide.contentSub }}</div>
-            </div>
-            <div class="slide-footer">
-              {{ slide.contentOption }}
-              <img src="../assets/icons/slide-next.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 <div class="carousel-container">
   <div class="img-box">
     <img
@@ -66,10 +28,8 @@
         <div class="next" (click)="navigateNext()">
           <img src="../assets/icons/rounded-right.svg" alt="Next Slide" />
         </div>
-
         <!-- Slide thumbnails -->
         <div class="slide-show">
-
           <!-- For lap, tab, Desktop  -->
           <div
             class="slide flex-column justify-content-between max-mobile"
@@ -89,24 +49,25 @@
               />
             </div>
           </div>
-
           <!-- for mobile -->
           <div class="slide flex-column justify-content-between mobile">
             <div>
               <div class="slide-head">
                 {{ slides[selectedIndex].contentHead }}
               </div>
-              <div class="slide-sub">{{ slides[selectedIndex].contentSub }}</div>
+              <div class="slide-sub">
+                {{ slides[selectedIndex].contentSub }}
+              </div>
             </div>
             <div class="slide-footer">
               {{ slides[selectedIndex].contentOption }}
-              <img src="../assets/icons/slide-next.svg" alt="Slide Footer Icon" />
+              <img
+                src="../assets/icons/slide-next.svg"
+                alt="Slide Footer Icon"
+              />
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </div>
